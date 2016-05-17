@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-        <style name="AppTheme" parent="android:Theme.Material">
+        <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
                 <!-- Customize your theme here. -->
-                <item name="colorPrimary">@android:color/holo_purple</item>
-                <item name="colorPrimaryDark">@color/holo_purple_dark</item>
-                <item name="colorControlHighlight">@color/colorAccent_translucent</item>
-                <item name="colorBackgroundCacheHint">@color/colorPrimaryDark</item>
-                <item name="textColor">#00FF00</item>
-                <item name="android:colorBackground">@android:color/holo_blue_light</item>
-                <item name="colorAccent">@android:color/holo_orange_light</item>
-                <item name="android:textColorPrimary">
-                        @android:color/primary_text_default_material_dark
-                </item>
-                <item name="android:colorPrimary">@android:color/primary_material_dark</item>
+                <item name="android:colorPrimary">@color/primary</item>
+                <item name="android:colorPrimaryDark">@color/primary_dark</item>
+                <item name="android:colorBackground">@color/primary_light</item>
+                <item name="android:colorAccent">@color/accent</item>
+                <item name="android:textColorPrimary">@color/primary_text</item>
+
+
+                <item name="android:windowEnterTransition">@android:transition/explode</item>
+                <item name="android:windowReturnTransition">@android:transition/explode</item>
+                <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+                <item name="android:windowSharedElementReturnTransition">@android:transition/move</item>
         </style>
 </resources>
