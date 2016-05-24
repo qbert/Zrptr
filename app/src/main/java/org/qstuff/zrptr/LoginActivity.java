@@ -3,6 +3,7 @@ package org.qstuff.zrptr;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -342,11 +343,11 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
 
             if (success) {
-                Intent i = new Intent(getApplicationContext(), SecondScreen.class);
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
                 i.putExtra("key", "value");
                 i.putExtra("email", "myemail@gmail.com");
 
-                StartActivity(i);
+                startActivity(i);
 
                 finish();
             } else {
